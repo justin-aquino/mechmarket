@@ -3,6 +3,7 @@ import Footer from "./Components/Footer";
 import { Container } from "react-bootstrap";
 import "./App.css";
 import HomeScreen from "./Screens/HomeScreen";
+import PropTypes from "prop-types";
 
 function App() {
   return (
@@ -11,8 +12,8 @@ function App() {
       <main>
         <Container>
           <h1>Mech Market by Juno</h1>
+          <HomeScreen />
         </Container>
-        <HomeScreen />
       </main>
       <Footer />
     </div>

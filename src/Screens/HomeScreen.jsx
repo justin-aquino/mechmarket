@@ -1,6 +1,6 @@
 import React from "react";
 import products from "../products";
-import { Col } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import Product from "../Components/Product";
 const HomeScreen = () => {
   console.log(products);
@@ -9,7 +9,7 @@ const HomeScreen = () => {
       <Col
         sm={12}
         md={6}
-        lg={4}
+        lg={3}
       >
         <Product product={product} />
       </Col>
@@ -18,7 +18,7 @@ const HomeScreen = () => {
   return (
     <>
       <h1>Featured Products</h1>
-      {mappedProducts}
+      <Row>{mappedProducts}</Row>
     </>
   );
 };

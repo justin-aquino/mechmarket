@@ -1,27 +1,31 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
+import Rating from "./Rating";
 
 const Product = ({ product }) => {
   return (
     <>
       <Card
         style={{ width: "18rem" }}
-        variant="light"
-        className="card border-secondary mb-3 my-3"
+        className="border-primary m-auto my-4"
       >
         <Card.Img
           variant="top"
           src={product.image}
-          alt={product.name}
         />
         <Card.Body>
-          <Card.Title className="card-subtitle text-muted">
-            {product.name}
-          </Card.Title>
-          <Card.Text>{product.description}</Card.Text>
+          <Card.Title>{product.name}</Card.Title>
+          <Card.Text>
+            <Rating
+              value={product.rating}
+              text={` from ${product.numReviews} reviews`}
+            />{" "}
+          </Card.Text>
+          <Card.Text>$ {product.price}</Card.Text>
           <Button
             variant="primary"
             aria-label={`More information on ${product.name}`}
+            className="mb-2"
           >
             More Info
           </Button>
