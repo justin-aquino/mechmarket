@@ -17,7 +17,7 @@ const HomeScreen = () => {
   });
   return (
     <>
-      <h1>Featured Products</h1>
+      <h3>Featured Products</h3>
       <Row>{mappedProducts}</Row>
     </>
   );

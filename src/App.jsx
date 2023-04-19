@@ -11,7 +11,8 @@ function App() {
       <Navibar />
       <main>
         <Container>
-          <h1>Mech Market by Juno</h1>
+          <h1 className="my-5 font-effect-neon">Mech Market by Juno</h1>
+          <h2 className="font-effect-neon">Open 24hrs</h2>
           <HomeScreen />
         </Container>
       </main>

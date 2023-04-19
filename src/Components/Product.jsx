@@ -7,14 +7,16 @@ const Product = ({ product }) => {
     <>
       <Card
         style={{ width: "18rem" }}
-        className="border-primary m-auto my-4"
+        className="border-primary m-auto my-4 p-2 rounded"
       >
         <Card.Img
           variant="top"
           src={product.image}
+          alt={product.name}
+          className="rounded"
         />
         <Card.Body>
-          <Card.Title>{product.name}</Card.Title>
+          <Card.Title className="text-light">{product.name}</Card.Title>
           <Card.Text>
             <Rating
               value={product.rating}

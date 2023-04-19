@@ -1,7 +1,18 @@
 main {
   min-height: 100vh;
 }
-
+h1,
+h2 {
+  font-family: "Neonderthaw", cursive;
+  font-size: 8rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 2rem;
+  margin-top: 5%;
+}
 .center {
   margin: 0 auto !important;
 }

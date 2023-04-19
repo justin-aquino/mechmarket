@@ -16,7 +16,7 @@ const Navibar = () => {
         >
           <img
             src="https://logovectordl.com/wp-content/uploads/2021/08/meko-mechanical-keyboard-logo-vector.png"
-            alt=""
+            alt="Logo"
             width={100}
           />
         </Navbar.Brand>
