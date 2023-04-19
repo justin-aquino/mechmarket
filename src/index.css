@@ -1,3 +1,7 @@
 main {
   min-height: 100vh;
 }
+
+.center {
+  margin: 0 auto !important;
+}

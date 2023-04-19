@@ -8,7 +8,9 @@ function App() {
     <div className="App">
       <Navibar />
       <main>
-        <h1>Mech Market by Juno</h1>
+        <Container>
+          <h1>Mech Market by Juno</h1>
+        </Container>
       </main>
       <Footer />
     </div>
