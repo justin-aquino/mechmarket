@@ -8,8 +8,8 @@ const Product = ({ product }) => {
     <>
       <Link to={`/product/${product._id}`}>
         <Card
-          style={{ width: "18rem" }}
-          className="border-primary m-auto my-4 p-2 rounded"
+          style={{ width: "18rem", height: "30rem" }}
+          className="border-primary m-auto my-3 p-2 rounded"
         >
           <Card.Img
             variant="top"
@@ -26,15 +26,17 @@ const Product = ({ product }) => {
               />{" "}
             </Card.Text>
             <Card.Text>$ {product.price}</Card.Text>
+          </Card.Body>
+          <Card.Footer>
             <Button
               tabIndex={-1}
               variant="primary"
               aria-label={`More information on ${product.name}`}
-              className="mb-2"
+              // className="mb-2"
             >
               More Info
             </Button>
-          </Card.Body>
+          </Card.Footer>
         </Card>
       </Link>
     </>

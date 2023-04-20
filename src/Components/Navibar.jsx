@@ -12,7 +12,7 @@ const Navibar = () => {
       <div className="container-fluid">
         <Navbar.Brand
           className="navbar-brand px-2"
-          href="#home"
+          href="/"
         >
           <img
             src="https://logovectordl.com/wp-content/uploads/2021/08/meko-mechanical-keyboard-logo-vector.png"
@@ -24,7 +24,7 @@ const Navibar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link
-              href="#home"
+              href="/"
               style={{ color: "white" }}
             >
               Home
@@ -33,7 +33,7 @@ const Navibar = () => {
               href="#link"
               style={{ color: "white" }}
             >
-              Link
+              Services
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

@@ -31,7 +31,7 @@ const ProductScreen = () => {
             fluid
           />
         </Col>
-        <Col>
+        <Col className="m-auto">
           <h3>{product.name}</h3>
           <Rating
             value={product.rating}
